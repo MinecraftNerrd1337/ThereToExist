@@ -1,0 +1,62 @@
+#include "resource.h"
+#include <windows.h>
+
+// Manifest
+1                       24                      "tte.manifest"
+// Icons files
+IDI_APPICON             ICON                    "res\\icon.ico"
+IDI_GEAR_ICON           ICON                    "res\\settings.ico"
+IDI_SYNC_ICON           ICON                    "res\\sync_icon.ico"
+IDI_RED_LIGHT_ICON      ICON                    "res\\red_light_icon.ico"
+IDI_GREEN_LIGHT_ICON    ICON                    "res\\green_light_icon.ico"
+IDI_MOUSE_CLICK_ICON    ICON                    "res\\mouse_click_icon.ico"
+IDI_TRIANGLE_RULER_ICON ICON                    "res\\triangle_ruler_icon.ico"
+IDI_PAINT_BRUSH_ICON    ICON                    "res\\paint_brush_icon.ico"
+
+
+// Metadata for the executable (Visible in Properties > Details)
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,1,0
+ PRODUCTVERSION 0,0,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0" // Language: US English, Character Set: Unicode
+        BEGIN
+            VALUE "CompanyName",      "Zebra_Paw"
+            VALUE "FileDescription",  "ThereToExist - A program that's there to exist"
+            VALUE "FileVersion",      "0.0.1 - Initial release"
+            VALUE "InternalName",     "ThereToExist.exe"
+            VALUE "LegalCopyright",   "Copyright (C) 2026 Zebra_Paw. Released under MIT License."
+            VALUE "OriginalFilename", "ThereToExist.exe"
+            VALUE "ProductName",      "ThereToExist"
+            VALUE "ProductVersion",   "0.0.1 - Initial release"
+            VALUE "Author",           "Zebra_Paw"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+// Settings tabs
+IDD_PAGE_PRESETS DIALOGEX 0, 0, 232, 280
+STYLE DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_DISABLED
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+IDD_PAGE_OGLSPOOF DIALOGEX 0, 0, 232, 280
+STYLE DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_DISABLED
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
