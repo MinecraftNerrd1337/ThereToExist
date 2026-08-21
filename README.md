@@ -20,7 +20,7 @@ A minimal Windows utility that puts everything you need behind just one single c
 
 ## Download
 
-Grab the latest release from the [Releases page](github.com/MinecraftNerrd1337/ThereToExist/releases/latest)
+Grab the latest release from the [Releases page](https://github.com/MinecraftNerrd1337/ThereToExist/releases/latest)
 
 
 ## How to use
