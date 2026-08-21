@@ -1,5 +1,3 @@
-Set Windows clock resolution to 1ms instead of the default 15.625ms for higher precision in the framerate# ThereToExist
-
 A minimal Windows utility that puts everything you need behind just one single click. Automate sequences of actions, launch external programs, toggle a GPU profile, and much more!
 
 
